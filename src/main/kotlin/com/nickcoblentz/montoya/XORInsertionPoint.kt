@@ -24,7 +24,7 @@ class XORInsertionPoint : BurpExtension, AuditInsertionPointProvider {
             return
         }
         Api=api
-        Logger = MontoyaLogger(api,MontoyaLogger.DebugLogLevel)
+        Logger = MontoyaLogger(api,LogLevel.DEBUG)
 
         Logger.debugLog( "Plugin Starting...")
 

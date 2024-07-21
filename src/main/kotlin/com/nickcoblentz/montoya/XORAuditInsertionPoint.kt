@@ -14,7 +14,7 @@ import com.nickcoblentz.montoya.MontoyaLogger
 
 class XORAuditInsertionPoint(private val Api: MontoyaApi, private val httpRequestResponse: HttpRequestResponse, val parsedHttpParameter: ParsedHttpParameter) : AuditInsertionPoint {
 
-    private var Logger : MontoyaLogger = MontoyaLogger(Api,MontoyaLogger.DebugLogLevel)
+    private var Logger : MontoyaLogger = MontoyaLogger(Api,LogLevel.DEBUG)
 
     private val ParameterTypesToURLDecode = listOf(HttpParameterType.URL, HttpParameterType.BODY)
 
